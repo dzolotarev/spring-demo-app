@@ -11,6 +11,7 @@ public class ManagersSocialTaxCounter {
         this.managersSalaryCounter = managersSalaryCounter;
     }
 
+    // Тут обычно возвращаем DTO
     public String countAndGetManagersTaxes(){
         StringBuilder result = new StringBuilder();
         List<Manager> managersSalary = managersSalaryCounter.increaseManagersSalary();
