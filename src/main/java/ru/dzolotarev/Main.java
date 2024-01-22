@@ -1,6 +1,7 @@
 package ru.dzolotarev;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ru.dzolotarev.entities.Manager;
 import ru.dzolotarev.services.ManagersIncomeTaxSender;
@@ -22,7 +23,7 @@ public class Main {
         //Можно поити паттерном Декоратор и фабричными методами, но есть Spring!
         //Spring поможет. У него есть: Application Context, Dependency Injection, Inversion of Control
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
+        ApplicationContext context = new AnnotationConfigApplicationContext("ru.dzolotarev");
 
         ManagersSalaryCounter managersSalaryCounter = context.getBean(ManagersSalaryCounter.class);
         List<Manager> managerList = managersSalaryCounter.increaseManagersSalary();
