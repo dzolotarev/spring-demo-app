@@ -1,9 +1,11 @@
 package ru.dzolotarev.services;
 
+import org.springframework.stereotype.Component;
 import ru.dzolotarev.entities.Manager;
 
 import java.util.List;
 
+@Component
 public class ManagersIncomeTaxCounter {
     private final ManagersSalaryCounter managersSalaryCounter;
 
