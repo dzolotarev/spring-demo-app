@@ -1,11 +1,13 @@
 package ru.dzolotarev.services;
 
+import org.springframework.stereotype.Component;
 import ru.dzolotarev.entities.Manager;
 import ru.dzolotarev.repository.ManagerDAO;
 
 import java.util.List;
 import java.util.Objects;
 
+@Component
 public class ManagersSalaryCounter {
     private final ManagerDAO managerDAO;
     private List<Manager> managers;

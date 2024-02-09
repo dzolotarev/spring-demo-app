@@ -1,5 +1,8 @@
 package ru.dzolotarev.services;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ManagersIncomeTaxSender {
     private final ManagersIncomeTaxCounter managersIncomeTaxCounter;
 
