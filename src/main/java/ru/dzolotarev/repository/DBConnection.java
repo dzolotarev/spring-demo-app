@@ -10,7 +10,7 @@ import java.util.Objects;
 public class DBConnection {
     private Session session;
 
-    public Session getSession(Class aClass) {
+    public Session getSession(Class<?> aClass) {
         if (Objects.isNull(session)) {
             SessionFactory sessionFactory = new Configuration()
                     .addAnnotatedClass(aClass)
