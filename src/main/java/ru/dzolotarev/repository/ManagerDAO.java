@@ -2,7 +2,6 @@ package ru.dzolotarev.repository;
 
 import org.hibernate.Session;
 import org.hibernate.query.Query;
-import org.springframework.stereotype.Component;
 import ru.dzolotarev.entities.Manager;
 
 import java.util.List;
