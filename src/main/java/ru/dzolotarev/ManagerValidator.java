@@ -18,8 +18,8 @@ public class ManagerValidator implements Validator {
     @Override
     public void validate(Object target, Errors errors) {
         ValidationUtils.rejectIfEmpty(errors, "login", "Empty login!");
-        Manager manager = (Manager) target;
 
+        Manager manager = (Manager) target;
         if (manager.getSalary() < 0) {
             errors.rejectValue("salary", "Salary: negative value!");
         } else if (manager.getSalary() > 150_000) {
