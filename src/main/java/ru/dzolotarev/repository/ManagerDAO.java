@@ -1,18 +1,15 @@
 package ru.dzolotarev.repository;
 
+import lombok.RequiredArgsConstructor;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
-import org.springframework.stereotype.Component;
 import ru.dzolotarev.entities.Manager;
 
 import java.util.List;
 
+@RequiredArgsConstructor
 public class ManagerDAO {
     private final DBConnection dbConnection;
-
-    public ManagerDAO(DBConnection dbConnection) {
-        this.dbConnection = dbConnection;
-    }
 
     public List<Manager> findAll() {
         List<Manager> managerList = null;
