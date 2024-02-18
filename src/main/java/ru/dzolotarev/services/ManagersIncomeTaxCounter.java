@@ -7,6 +7,7 @@ import java.util.List;
 
 @Component
 public class ManagersIncomeTaxCounter {
+
     private final ManagersSalaryCounter managersSalaryCounter;
 
     public ManagersIncomeTaxCounter(ManagersSalaryCounter managersSalaryCounter) {

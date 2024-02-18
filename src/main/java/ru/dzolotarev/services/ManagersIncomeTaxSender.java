@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ManagersIncomeTaxSender {
+
     private final ManagersIncomeTaxCounter managersIncomeTaxCounter;
 
     public ManagersIncomeTaxSender(ManagersIncomeTaxCounter managersIncomeTaxCounter) {

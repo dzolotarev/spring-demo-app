@@ -19,6 +19,7 @@ import java.util.List;
  */
 
 public class Main {
+
     public static void main(String[] args) throws IOException {
         // 1. Место создания по new
         // 2. Контроль жизненного цикла наших объектов

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ResourceService {
+
     private final ResourceLoader resourceLoader;
 
     public ResourceService(ResourceLoader resourceLoader) {

@@ -9,6 +9,7 @@ import java.util.Objects;
 
 @Component
 public class ManagersSalaryCounter {
+
     private final ManagerDAO managerDAO;
     private List<Manager> managers;
 
