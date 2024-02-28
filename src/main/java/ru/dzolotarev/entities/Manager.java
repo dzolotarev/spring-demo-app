@@ -11,21 +11,26 @@ import java.time.LocalDate;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Getter
 @Setter
 
 @Entity
-@Table(name = "managers", schema = "company")
+@Table(name = "managers", schema = "public")
 public class Manager {
 
     @Id
     private Long id;
+
     private String name;
     private String title;
     private Integer salary;
+
     @Column(name = "hire_date")
     private LocalDate hireDate;
+
     private Integer subordinates;
+
     @Column(name = "department_id")
     private Integer departmentId;
 }

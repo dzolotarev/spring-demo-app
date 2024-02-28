@@ -1,18 +1,16 @@
 package ru.dzolotarev.services;
 
-import org.springframework.stereotype.Component;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 import ru.dzolotarev.entities.Manager;
 
 import java.util.List;
 
-@Component
+@Service
+@RequiredArgsConstructor
 public class ManagersIncomeTaxCounter {
 
     private final ManagersSalaryCounter managersSalaryCounter;
-
-    public ManagersIncomeTaxCounter(ManagersSalaryCounter managersSalaryCounter) {
-        this.managersSalaryCounter = managersSalaryCounter;
-    }
 
     // Тут обычно возвращаем DTO
     public String countAndGetManagersTaxes() {

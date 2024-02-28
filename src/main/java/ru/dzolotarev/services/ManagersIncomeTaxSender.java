@@ -1,15 +1,13 @@
 package ru.dzolotarev.services;
 
-import org.springframework.stereotype.Component;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
+@RequiredArgsConstructor
 public class ManagersIncomeTaxSender {
 
     private final ManagersIncomeTaxCounter managersIncomeTaxCounter;
-
-    public ManagersIncomeTaxSender(ManagersIncomeTaxCounter managersIncomeTaxCounter) {
-        this.managersIncomeTaxCounter = managersIncomeTaxCounter;
-    }
 
     public void sendManagersTaxes() {
         String supervisorTaxes = managersIncomeTaxCounter.countAndGetManagersTaxes();
